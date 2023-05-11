@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: 0;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1305px;
+}
+
+.title {
+    position: relative;
+    top: 120px;
+    left: 140px;
+    font-size: 50px;
+    color: #527CCD;
+}
+
+/* ----------------------------dots ----------------------------*/
+
+.slider-dots {
+    position: relative;
+    top: 90px;
+    left: 745px;
+}
+
+.slider-dots_item {
+    cursor: pointer;
+    height: 1px;
+    width: 60px;
+    margin-left: -5px;
+    background-color: #CCDDFF;
+    border-radius: 20%;
+    display: inline-block;
+}
+
+.active,
+.slider-dots_item:hover {
+    background-color: #527CCD;
+
+}
+
+/* ----------------------------button ----------------------------*/
+
+button {
+    background-color: #ffffff;
+    position: absolute;
+    border: 1px solid #C8D9FB;
+}
+
+button:hover {
+    background-color: #C8D9FB;
+    cursor: pointer;
+}
+
+.slider-prev {
+    width: 60px;
+    height: 60px;
+    top: 120px;
+    left: 1140px;
+}
+
+.slider-next {
+    width: 60px;
+    height: 60px;
+    top: 120px;
+    left: 1240px;
+}
+
+/* ---------------------------- slider ----------------------------*/
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 700px;
+    max-width: 1305px;
+}
+
+.slider-line {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide {
+    display: block;
+    position: relative;
+    left: 140px;
+    top: 220px;
+    width: 220px;
+    height: 420px;
+    border: 1px solid #C8D9FB;
+    margin-right: 40px;
+    padding: 20px;
+
+}
+
+.activate {
+    border-color: #527CCD;
+}
+
+/* ---------------------------- style inside the slide ---------------------------- */
+
+.bi-card-image {
+    position: relative;
+    top: 30%;
+    left: 30%;
+}
+
+.slider__image {
+    background-color: #C8D9FB;
+    height: 160px;
+    width: 220px;
+}
+
+p {
+    padding-top: 10px;
+    color: #527CCD;
+}
+
+.text__data {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.text__title {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.text {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 320px) and (max-height: 750px) {
+
+    .title {
+        position: absolute;
+        width: 223px;
+        height: 50px;
+        left: 15px;
+        top: 30px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .slider {
+        position: absolute;
+        position: absolute;
+        width: 280px;
+        height: 418px;
+        left: -125px;
+        top: -100px;
+    }
+
+    .slide {
+        margin-right: 20px;
+    }
+
+    .slider-prev {
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        left: 15px;
+        top: 598px;
+    }
+
+    .slider-next {
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        left: 222px;
+        top: 598px;
+    }
+
+    .slider-dots {
+        position: absolute;
+        width: 130px;
+        height: 0px;
+        left: 90px;
+        top: 613px;
+    }
+
+    .slider-dots_item {
+        width: 30px;
+    }
+}
